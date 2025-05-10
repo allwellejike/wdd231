@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px){
+nav ul{
+    display: flex !important;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li{
+    display: inline;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+header{
+    justify-content: space-between;
+}
+
+#filters{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
