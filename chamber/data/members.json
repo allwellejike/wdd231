@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Alpha Tech",
+        "address": "123 Main St, Your City",
+        "phone": "555-123-4567",
+        "website": "https://alphatech.com",
+        "image": "company1.jpg",
+        "level": 3
+    },
+    {
+        "name": "Green Garden Supplies",
+        "address": "456 Oak Ave, Your City",
+        "phone": "555-234-5678",
+        "website": "https://greengarden.com",
+        "image": "company2.jpg",
+        "level": 2
+    },
+    {
+        "name": "Sunrise Bakery",
+        "address": "789 Pine Rd, Your City",
+        "phone": "555-345-6789",
+        "website": "https://sunrisebakery.com",
+        "image": "company3.jpg",
+        "level": 1
+    }
+    // Add 4 more companies here
+]
