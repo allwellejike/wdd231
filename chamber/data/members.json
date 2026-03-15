@@ -1,65 +1,64 @@
 [
-  {
-    "companyName": "Sunshine Bakery",
-    "address": "123 Main St, Orogbum, NG",
-    "phone": "080-123-4567",
-    "website": "https://sunshinebakery.com",
-    "image": "business1.jpg",
-    "membershipLevel": 3,
-    "description": "Fresh baked goods daily."
-  },
-  {
-    "companyName": "Tech Solutions",
-    "address": "456 Elm St, Orogbum, NG",
-    "phone": "080-234-5678",
-    "website": "https://techsolutions.com",
-    "image": "business2.jpg",
-    "membershipLevel": 2,
-    "description": "IT support and technology solutions for businesses."
-  },
-  {
-    "companyName": "GreenLeaf Landscaping",
-    "address": "789 Oak Ave, Orogbum, NG",
-    "phone": "080-345-6789",
-    "website": "https://greenleaflandscaping.com",
-    "image": "business3.jpg",
-    "membershipLevel": 1,
-    "description": "Professional landscaping and garden design services."
-  },
-  {
-    "companyName": "Orogbum Fitness Center",
-    "address": "101 Maple Rd, Orogbum, NG",
-    "phone": "080-456-7890",
-    "website": "https://orogbumfitness.com",
-    "image": "business4.jpg",
-    "membershipLevel": 3,
-    "description": "State-of-the-art gym and fitness programs for all ages."
-  },
-  {
-    "companyName": "BrightStar Café",
-    "address": "202 Pine St, Orogbum, NG",
-    "phone": "080-567-8901",
-    "website": "https://brightstarcafe.com",
-    "image": "business5.jpg",
-    "membershipLevel": 2,
-    "description": "Cozy café serving coffee, pastries, and light meals."
-  },
-  {
-    "companyName": "Elite Travel Agency",
-    "address": "303 Cedar Blvd, Orogbum, NG",
-    "phone": "080-678-9012",
-    "website": "https://elitetravel.com",
-    "image": "business6.jpg",
-    "membershipLevel": 1,
-    "description": "Travel planning, tickets, and personalized tour packages."
-  },
-  {
-    "companyName": "Harmony Dental Clinic",
-    "address": "404 Birch Lane, Orogbum, NG",
-    "phone": "080-789-0123",
-    "website": "https://harmonydental.com",
-    "image": "business7.jpg",
-    "membershipLevel": 3,
-    "description": "Comprehensive dental care with a friendly environment."
-  }
+{
+"companyName": "Sunshine Bakery",
+"address": "123 Main St, Orogbum, NG",
+"phone": "080-123-4567",
+"website": "https://sunshinebakery.com",
+"image": "business1.jpg",
+"membershipLevel": 3
+},
+
+{
+"companyName": "Tech Solutions",
+"address": "456 Elm St, Orogbum, NG",
+"phone": "080-234-5678",
+"website": "https://techsolutions.com",
+"image": "business2.jpg",
+"membershipLevel": 2
+},
+
+{
+"companyName": "GreenLeaf Landscaping",
+"address": "789 Oak Ave, Orogbum, NG",
+"phone": "080-345-6789",
+"website": "https://greenleaflandscaping.com",
+"image": "business3.jpg",
+"membershipLevel": 1
+},
+
+{
+"companyName": "Orogbum Fitness Center",
+"address": "101 Maple Rd, Orogbum, NG",
+"phone": "080-456-7890",
+"website": "https://orogbumfitness.com",
+"image": "business4.jpg",
+"membershipLevel": 3
+},
+
+{
+"companyName": "BrightStar Café",
+"address": "202 Pine St, Orogbum, NG",
+"phone": "080-567-8901",
+"website": "https://brightstarcafe.com",
+"image": "business5.jpg",
+"membershipLevel": 2
+},
+
+{
+"companyName": "Elite Travel Agency",
+"address": "303 Cedar Blvd, Orogbum, NG",
+"phone": "080-678-9012",
+"website": "https://elitetravel.com",
+"image": "business6.jpg",
+"membershipLevel": 1
+},
+
+{
+"companyName": "Harmony Dental Clinic",
+"address": "404 Birch Lane, Orogbum, NG",
+"phone": "080-789-0123",
+"website": "https://harmonydental.com",
+"image": "business7.jpg",
+"membershipLevel": 3
+}
 ]

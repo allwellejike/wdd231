@@ -1,8 +1,8 @@
-const membersDiv = document.querySelector('#members');
-const gridBtn = document.querySelector('#gridBtn');
-const listBtn = document.querySelector('#listBtn');
+const membersDiv = document.querySelector("#members");
+const gridBtn = document.querySelector("#gridBtn");
+const listBtn = document.querySelector("#listBtn");
 
-const url = 'data/members.json';
+const url = "data/members.json";
 
 async function getMembers() {
     try {
@@ -15,27 +15,45 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-    membersDiv.innerHTML = '';
+
+    membersDiv.innerHTML = "";
+
     members.forEach(member => {
-        const card = document.createElement('div');
-        card.className = 'card';
+
+        const card = document.createElement("div");
+        card.classList.add("card");
+
         card.innerHTML = `
-            <h2>${member.name}</h2>
-            <img src="images/${member.image}" alt="${member.name}" loading="lazy">
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-            <p>Membership Level: ${member.level}</p>
+        <h2>${member.companyName}</h2>
+        <img src="images/${member.image}" alt="Logo of ${member.companyName}" loading="lazy">
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <p>
+        <a href="${member.website}" target="_blank" rel="noopener">
+        Visit Website
+        </a>
+        </p>
+        <p>Membership Level: ${member.membershipLevel}</p>
         `;
+
         membersDiv.appendChild(card);
+
     });
+
 }
 
-// Toggle grid/list view
-gridBtn.addEventListener('click', () => membersDiv.className = 'grid');
-listBtn.addEventListener('click', () => membersDiv.className = 'list');
 
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
+gridBtn.addEventListener("click", () => {
+    membersDiv.className = "grid";
+});
+
+listBtn.addEventListener("click", () => {
+    membersDiv.className = "list";
+});
+
+
+document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;
+
 
 getMembers();
