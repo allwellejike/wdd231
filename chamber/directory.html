@@ -29,48 +29,31 @@
     <!-- JS -->
     <script src="scripts/directory.js" defer></script>
 </head>
-
 <body>
+    <header>
+        <h1>Chamber of Commerce Directory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-<h1>Chamber of Commerce Directory</h1>
+    <main>
+        <section>
+            <button id="gridBtn">Grid View</button>
+            <button id="listBtn">List View</button>
+        </section>
+        <div id="members" class="grid"></div>
+    </main>
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="discover.html">Discover</a></li>
-<li><a href="directory.html" class="active">Directory</a></li>
-<li><a href="join.html">Join</a></li>
-</ul>
-</nav>
-
-</header>
-
-
-<main>
-
-<section>
-<button id="gridBtn">Grid View</button>
-<button id="listBtn">List View</button>
-</section>
-
-<div id="members" class="grid"></div>
-
-</main>
-
-
-<footer>
-
-<p>
-Allwell Chimaruoke Ejike | WDD 231 | 
-&copy; <span id="year"></span>
-</p>
-
-<p>
-Last Modified: <span id="lastModified"></span>
-</p>
-
-</footer>
-
+    <footer>
+        <p>
+            Allwell Chimaruoke Ejike | WDD 231 | &copy; <span id="year"></span> | Last modified: <span id="lastModified"></span>
+        </p>
+    </footer>
 </body>
 </html>
