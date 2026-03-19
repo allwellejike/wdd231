@@ -1,74 +1,130 @@
-body{
-font-family:Poppins, sans-serif;
-margin:0;
-padding:0;
+/* Base Styles */
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:1rem;
-background:#222;
-color:white;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
 }
 
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-nav ul{
-list-style:none;
-padding:0;
-display:none;
-flex-direction:column;
+.logo img {
+    width: 40px;
 }
 
-nav ul.open{
-display:flex;
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-padding:10px;
-display:block;
+nav ul.open {
+    display: flex;
 }
 
-#menu{
-font-size:2rem;
-background:none;
-border:none;
-color:white;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
 }
 
-main{
-padding:1rem;
+nav a.active {
+    background: #004080;
 }
 
-section{
-margin-bottom:2rem;
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
-#courses{
-display:grid;
-gap:1rem;
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
 }
 
-.course{
-padding:1rem;
-border:1px solid #ccc;
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.completed{
-background:#d4edda;
+/* Courses Grid */
+#courses {
+    display: grid;
+    gap: 1rem;
 }
 
-footer{
-text-align:center;
-padding:1rem;
-background:#222;
-color:white;
+.course {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    background: #f8f8f8;
+}
+
+.course.completed {
+    background: #d4edda;
+}
+
+.course:hover {
+    transform: scale(1.02);
+}
+
+/* Buttons */
+.buttons {
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #004080;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.buttons button:hover {
+    background: #002f5b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+}
+
+footer .social a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
 }
