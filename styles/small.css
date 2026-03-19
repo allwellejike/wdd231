@@ -6,13 +6,14 @@ body {
     background: #f9f9f9;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #222;
-    color: white;
+    background: #111; /* darker for better contrast */
+    color: #ffffff;
 }
 
 .logo {
@@ -39,7 +40,7 @@ nav ul.open {
 }
 
 nav a {
-    color: white;
+    color: #ffffff; /* keeps high contrast */
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
@@ -47,14 +48,16 @@ nav a {
 }
 
 nav a.active {
-    background: #004080;
+    background-color: #0052cc; /* brighter blue for active page */
+    font-weight: 600;
 }
 
+/* Hamburger Menu */
 #menu {
     font-size: 2rem;
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -68,7 +71,7 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 1rem;
-    background: #fff;
+    background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
@@ -85,6 +88,7 @@ section {
     border-radius: 8px;
     transition: transform 0.2s;
     background: #f8f8f8;
+    color: #111; /* text contrast against light background */
 }
 
 .course.completed {
@@ -105,26 +109,26 @@ section {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    background: #004080;
-    color: white;
+    background: #0052cc; /* brighter blue for better contrast */
+    color: #ffffff;
     cursor: pointer;
     transition: background 0.2s;
 }
 
 .buttons button:hover {
-    background: #002f5b;
+    background: #003d99;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #222;
-    color: white;
+    background: #111; /* darker for better contrast */
+    color: #ffffff;
 }
 
 footer .social a {
     margin: 0 0.5rem;
-    color: white;
+    color: #ffffff; /* high contrast */
     text-decoration: none;
 }
