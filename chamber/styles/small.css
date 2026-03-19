@@ -36,7 +36,7 @@ cursor: pointer;
 
 .grid {
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 1rem;
 padding: 1rem;
 }
@@ -44,8 +44,10 @@ padding: 1rem;
 .card {
 border: 1px solid #ccc;
 padding: 1rem;
-border-radius: 8px;
+border-radius: 10px;
 text-align: center;
+background: white;
+transition: transform 0.2s ease;
 }
 
 .card img {
@@ -53,12 +55,43 @@ max-width: 100%;
 height: auto;
 }
 
+.card:hover {
+transform: scale(1.03);
+}
+
+
 .list {
 display: block;
-padding: 1rem;
 }
 
 .list .card {
-border-bottom: 1px solid #ccc;
-margin-bottom: 1rem;
+display: grid;
+grid-template-columns: 100px 1fr;
+gap: 1rem;
+align-items: center;
+text-align: left;
+}
+
+.list .card img {
+width: 100px;
+}
+
+#menuBtn {
+font-size: 2rem;
+background: none;
+border: none;
+color: white;
+cursor: pointer;
+}
+
+#navMenu {
+display: none;
+}
+
+#navMenu.open {
+display: block;
+}
+
+#navMenu ul {
+flex-direction: column;
 }
