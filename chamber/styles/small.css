@@ -118,9 +118,6 @@ display: none;
 display: block;
 }
 
-#navMenu ul {
-flex-direction: column;
-}
 
 main {
 max-width: 1100px;
