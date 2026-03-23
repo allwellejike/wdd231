@@ -3,67 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chamber of Commerce Home Page">
+  
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Welcome to the Chamber of Commerce website. Connect, grow, and discover local businesses in Orogbum.">
   <meta name="author" content="Allwell Ejike">
+  
+  <!-- Page Title -->
   <title>Chamber of Commerce | Home</title>
 
+  <!-- Google Fonts (Proper Preconnect) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chamber of Commerce | Home">
+  <meta property="og:description" content="Discover local businesses, events, and opportunities with the Chamber of Commerce in Orogbum.">
+  <meta property="og:url" content="https://allwellejike.github.io/wdd231/chamber/index.html">
+  <meta property="og:image" content="https://allwellejike.github.io/wdd231/chamber/images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <h1>Chamber of Commerce</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
-  </nav>
-</header>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="images/hero.jpg" alt="City view">
-    <div class="hero-text">
-      <h2>Welcome to Our Chamber</h2>
-      <a href="join.html" class="cta">Join the Chamber</a>
-    </div>
-  </section>
+    <main>
+    <!-- HERO -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="City view">
+            <div class="hero-text">
+                <h2>Welcome to Our Chamber</h2>
+                <a href="join.html" class="cta">Join the Chamber</a>
+            </div>
+        </section>
 
   <!-- EVENTS -->
-  <section class="events">
-    <h2>Current Events</h2>
-    <p>Business networking meetup this Friday at 5PM.</p>
-  </section>
+        <section class="events">
+            <h2>Current Events</h2>
+            <p>Business networking meetup this Friday at 5PM.</p>
+        </section>
 
   <!-- WEATHER -->
-  <section class="weather">
-    <h2>Weather</h2>
-    <p>Temperature: <span id="temp"></span>°C</p>
-    <p>Description: <span id="desc"></span></p>
-    <h3>3-Day Forecast</h3>
-    <ul id="forecast"></ul>
-  </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Temperature: <span id="temp"></span>°C</p>
+            <p>Description: <span id="desc"></span></p>
+            <h3>3-Day Forecast</h3>
+            <ul id="forecast"></ul>
+        </section>
 
   <!-- SPOTLIGHT -->
-  <section class="spotlight">
-    <h2>Company Spotlights</h2>
-    <div id="spotlight-container"></div>
-  </section>
+        <section class="spotlight">
+            <h2>Company Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+    </main>
 
-</main>
+    <footer>
+        <p>&copy; 2026 Chamber of Commerce</p>
+    </footer>
 
-<footer>
-  <p>&copy; 2026 Chamber of Commerce</p>
-</footer>
 
-<script src="scripts/home.js"></script>
 </body>
 </html>

@@ -18,4 +18,11 @@
         grid-template-columns: 1fr; /* still single column for list view */
     }
 
+
+
+    #members.grid {
+    display: grid;
+    gap: 1rem; /* optional, for spacing */
+    }
+
 }
