@@ -12,47 +12,68 @@ header, footer {
     text-align: center;
 }
 
+/* Hide nav by default on small screens */
+#navMenu {
+  display: none;
+}
+
+/* Show nav when .open is added (hamburger clicked) */
+#navMenu.open {
+  display: block;
+}
+
+/* Style nav links */
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-    margin: 0 1rem;
+  margin: 0.5rem 0;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
+  color: white; /* matches your header/footer blue theme */
+  font-weight: normal;
 }
 
+/* Active link (wayfinding) */
+nav a.active {
+  color: #66a3ff; /* lighter blue for highlight */
+  font-weight: bold;
+  border-bottom: 2px solid white; /* optional underline */
+}
+
+/* Hamburger button styling */
 #menuBtn {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-#navMenu {
-    display: none;
-}
+/* Desktop: show nav always */
+@media (min-width: 768px) {
+  #menuBtn {
+    display: none; /* hide hamburger on desktop */
+  }
 
-#navMenu.open {
+  #navMenu {
     display: block;
-}
+  }
 
-#navMenu ul {
-    flex-direction: column;
-    background: #003366;
-    padding: 1rem;
-}
+  #navMenu ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 
-#navMenu li {
-    margin: 0.5rem 0;
+  nav li {
+    margin: 0 1rem;
+  }
 }
 
 button {
