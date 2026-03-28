@@ -10,6 +10,14 @@
         flex-direction: row;
     }
 
+    #menuBtn {
+        display: none;
+    }
+
+    #navMenu {  
+    display: block !important;
+    }
+
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
