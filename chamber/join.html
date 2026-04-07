@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Allwell Ejike">
+  <meta name="description" content="Join the Chamber of Commerce by submitting a membership application form with NP, Bronze, Silver, or Gold membership options.">
+
+  <title>Join Chamber</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="chamber.css">
+  <script defer src="join.js"></script>
+</head>
+
+<body>
+
+    <h1>Chamber Membership Application</h1>
+
+    <form method="get" action="thankyou.html">
+
+  <!-- First Name -->
+  <label>
+    First Name
+    <input type="text" name="first" required autocomplete="given-name" title="First Name">
+  </label>
+
+  <!-- Last Name -->
+  <label>
+    Last Name
+    <input type="text" name="last" required autocomplete="family-name" title="Last Name">
+  </label>
+
+  <!-- Organization Title -->
+  <label>
+    Organization Title
+    <input type="text"
+           name="orgTitle"
+           autocomplete="organization-title"
+           pattern="[A-Za-z\\s\\-]{7,}"
+           title="Organization Title (min 7 characters, letters/hyphens/spaces only)">
+  </label>
+
+  <!-- Email -->
+  <label>
+    Email
+    <input type="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Email">
+  </label>
+
+  <!-- Phone -->
+  <label>
+    Phone
+    <input type="tel" name="phone" required autocomplete="tel" title="Phone Number">
+  </label>
+
+  <!-- Organization -->
+  <label>
+    Organization Name
+    <input type="text" name="organization" required autocomplete="organization" title="Organization Name">
+  </label>
+
+  <!-- Membership Level -->
+  <label>
+    Membership Level
+    <select name="membership" required>
+      <option value="np">NP Membership</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+  </label>
+
+  <!-- Description -->
+  <label>
+    Description
+    <textarea name="description" title="Business Description"></textarea>
+  </label>
+
+  <!-- Hidden Timestamp -->
+  <input type="hidden" id="timestamp" name="timestamp">
+
+  <button type="submit">Submit Application</button>
+
+</form>
+
+<!-- Membership Cards -->
+<section>
+  <h2>Membership Levels</h2>
+
+  <div>
+    <h3>NP Membership</h3>
+    <a href="#">More Info</a>
+  </div>
+
+  <div>
+    <h3>Bronze Membership</h3>
+    <a href="#">More Info</a>
+  </div>
+
+  <div>
+    <h3>Silver Membership</h3>
+    <a href="#">More Info</a>
+  </div>
+
+  <div>
+    <h3>Gold Membership</h3>
+    <a href="#">More Info</a>
+  </div>
+
+</section>
+
+<!-- Modals -->
+<dialog id="npModal">
+  <p>NP Membership: No fee for non-profits.</p>
+  <button onclick="closeModal('npModal')">Close</button>
+</dialog>
+
+<dialog id="bronzeModal">
+  <p>Bronze Membership: Basic benefits and listing.</p>
+  <button onclick="closeModal('bronzeModal')">Close</button>
+</dialog>
+
+<dialog id="silverModal">
+  <p>Silver Membership: Discounts and event access.</p>
+  <button onclick="closeModal('silverModal')">Close</button>
+</dialog>
+
+<dialog id="goldModal">
+  <p>Gold Membership: Premium visibility and full benefits.</p>
+  <button onclick="closeModal('goldModal')">Close</button>
+</dialog>
+
+</body>
+</html>

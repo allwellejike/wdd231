@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Allwell Ejike">
+  <meta name="description" content="Thank you page confirming chamber membership application submission.">
+
+  <title>Thank You</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>Thank You for Your Application!</h1>
+
+<p>We have received your submission. Here are your details:</p>
+
+<div id="output"></div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+
+  const first = params.get("first");
+  const last = params.get("last");
+  const email = params.get("email");
+  const phone = params.get("phone");
+  const organization = params.get("organization");
+  const timestamp = params.get("timestamp");
+
+  document.getElementById("output").innerHTML = `
+    <p><strong>First Name:</strong> ${first}</p>
+    <p><strong>Last Name:</strong> ${last}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
+    <p><strong>Organization:</strong> ${organization}</p>
+    <p><strong>Timestamp:</strong> ${timestamp}</p>
+  `;
+</script>
+
+</body>
+</html>
