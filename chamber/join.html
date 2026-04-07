@@ -5,135 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="author" content="Allwell Ejike">
-  <meta name="description" content="Join the Chamber of Commerce by submitting a membership application form with NP, Bronze, Silver, or Gold membership options.">
+  <meta name="description" content="Join the Orogbum Chamber of Commerce by applying for NP, Bronze, Silver, or Gold membership.">
 
-  <title>Join Chamber</title>
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Join the Orogbum Chamber of Commerce">
+  <meta property="og:description" content="Apply for NP, Bronze, Silver, or Gold membership and grow your business with the Orogbum Chamber.">
+  <meta property="og:image" content="https://allwellejike.github.io/wdd231/images/chamber.jpg">
+  <meta property="og:url" content="https://allwellejike.github.io/wdd231/chamber/join.html">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Join the Orogbum Chamber of Commerce</title>
 
+  <!-- FAVICON -->
+  <link rel="icon" href="images/favicon.ico">
 
-  <link rel="stylesheet" href="chamber.css">
-  <script defer src="join.js"></script>
+  <!-- CSS (2 REQUIRED FILES) -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+
+  <!-- JS -->
+  <script defer src="scripts/join.js"></script>
 </head>
 
 <body>
 
-    <h1>Chamber Membership Application</h1>
+<header>
+  <h1>Join the Chamber</h1>
+</header>
 
-    <form method="get" action="thankyou.html">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="join.html">Join</a>
+</nav>
 
-  <!-- First Name -->
-  <label>
-    First Name
-    <input type="text" name="first" required autocomplete="given-name" title="First Name">
+<main>
+
+<form method="get" action="thankyou.html">
+
+  <label>First Name
+    <input type="text" name="first" required>
   </label>
 
-  <!-- Last Name -->
-  <label>
-    Last Name
-    <input type="text" name="last" required autocomplete="family-name" title="Last Name">
+  <label>Last Name
+    <input type="text" name="last" required>
   </label>
 
-  <!-- Organization Title -->
-  <label>
-    Organization Title
-    <input type="text"
-           name="orgTitle"
-           autocomplete="organization-title"
-           pattern="[A-Za-z\\s\\-]{7,}"
-           title="Organization Title (min 7 characters, letters/hyphens/spaces only)">
+  <label>Organization Title
+    <input type="text" name="orgTitle" pattern="[A-Za-z\\s\\-]{7,}">
   </label>
 
-  <!-- Email -->
-  <label>
-    Email
-    <input type="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Email">
+  <label>Email
+    <input type="email" name="email" required>
   </label>
 
-  <!-- Phone -->
-  <label>
-    Phone
-    <input type="tel" name="phone" required autocomplete="tel" title="Phone Number">
+  <label>Phone
+    <input type="tel" name="phone" required>
   </label>
 
-  <!-- Organization -->
-  <label>
-    Organization Name
-    <input type="text" name="organization" required autocomplete="organization" title="Organization Name">
+  <label>Organization Name
+    <input type="text" name="organization" required>
   </label>
 
-  <!-- Membership Level -->
-  <label>
-    Membership Level
+  <label>Membership Level
     <select name="membership" required>
       <option value="np">NP Membership</option>
-      <option value="bronze">Bronze Membership</option>
-      <option value="silver">Silver Membership</option>
-      <option value="gold">Gold Membership</option>
+      <option value="bronze">Bronze</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
     </select>
   </label>
 
-  <!-- Description -->
-  <label>
-    Description
-    <textarea name="description" title="Business Description"></textarea>
+  <label>Description
+    <textarea name="description"></textarea>
   </label>
 
-  <!-- Hidden Timestamp -->
+  <!-- Timestamp -->
   <input type="hidden" id="timestamp" name="timestamp">
 
   <button type="submit">Submit Application</button>
 
 </form>
 
-<!-- Membership Cards -->
+<!-- MEMBERSHIP CARDS -->
 <section>
   <h2>Membership Levels</h2>
 
   <div>
     <h3>NP Membership</h3>
-    <a href="#">More Info</a>
+    <button id="npBtn">More Info</button>
   </div>
 
   <div>
     <h3>Bronze Membership</h3>
-    <a href="#">More Info</a>
+    <button id="bronzeBtn">More Info</button>
   </div>
 
   <div>
     <h3>Silver Membership</h3>
-    <a href="#">More Info</a>
+    <button id="silverBtn">More Info</button>
   </div>
 
   <div>
     <h3>Gold Membership</h3>
-    <a href="#">More Info</a>
+    <button id="goldBtn">More Info</button>
   </div>
 
 </section>
 
-<!-- Modals -->
+<!-- MODALS -->
 <dialog id="npModal">
-  <p>NP Membership: No fee for non-profits.</p>
-  <button onclick="closeModal('npModal')">Close</button>
+  <p>NP Membership: Free for non-profits.</p>
+  <button class="close">Close</button>
 </dialog>
 
 <dialog id="bronzeModal">
-  <p>Bronze Membership: Basic benefits and listing.</p>
-  <button onclick="closeModal('bronzeModal')">Close</button>
+  <p>Bronze Membership: Basic benefits.</p>
+  <button class="close">Close</button>
 </dialog>
 
 <dialog id="silverModal">
-  <p>Silver Membership: Discounts and event access.</p>
-  <button onclick="closeModal('silverModal')">Close</button>
+  <p>Silver Membership: Discounts + events.</p>
+  <button class="close">Close</button>
 </dialog>
 
 <dialog id="goldModal">
-  <p>Gold Membership: Premium visibility and full benefits.</p>
-  <button onclick="closeModal('goldModal')">Close</button>
+  <p>Gold Membership: Premium visibility.</p>
+  <button class="close">Close</button>
 </dialog>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Orogbum Chamber of Commerce</p>
+</footer>
 
 </body>
 </html>
