@@ -79,7 +79,7 @@
                 name="organization"
                 autocomplete="organization"
                 title="Organization Name"
-                required>
+                pattern="[A-Za-z\s\-]{2,50}">
             </label>
 
             <label>Membership Level
@@ -91,8 +91,8 @@
                 </select>
             </label>
 
-            <label>Description
-                <textarea name="description"></textarea>
+            <label>Organization Description
+                <textarea name="description" title="Organization Description"></textarea>
             </label>
 
   <!-- Timestamp -->
