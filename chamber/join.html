@@ -13,6 +13,10 @@
   <meta property="og:image" content="https://allwellejike.github.io/wdd231/images/chamber.jpg">
   <meta property="og:url" content="https://allwellejike.github.io/wdd231/chamber/join.html">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <title>Join the Orogbum Chamber of Commerce</title>
 
   <!-- FAVICON -->
@@ -42,27 +46,40 @@
         <form method="get" action="thankyou.html">
 
             <label>First Name
-                <input type="text" name="first" required>
+                <input type="text" name="first" autocomplete="given-name" title="First Name" required>
             </label>
 
             <label>Last Name
-                <input type="text" name="last" required>
+                <input type="text" name="last" autocomplete="family-name" title="Last Name" required>
             </label>
 
             <label>Organization Title
-                <input type="text" name="orgTitle" pattern="[A-Za-z\\s\\-]{7,}">
+                <input type="text" name="orgTitle" autocomplete="organization-title" title="Organization Title">
             </label>
 
             <label>Email
-                <input type="email" name="email" required>
+                <input type="email"
+                name="email"
+                autocomplete="email"
+                title="Email Address"
+                placeholder="name@example.com"
+                required>
             </label>
 
             <label>Phone
-                <input type="tel" name="phone" required>
+                <input type="tel"
+                name="phone"
+                autocomplete="tel"
+                title="Mobile Phone"
+                required>
             </label>
 
             <label>Organization Name
-                <input type="text" name="organization" required>
+                <input type="text"
+                name="organization"
+                autocomplete="organization"
+                title="Organization Name"
+                required>
             </label>
 
             <label>Membership Level
