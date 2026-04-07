@@ -176,3 +176,21 @@ main {
 .list .card img {
     display: none; /* hide images in list view */
 }
+
+.membership-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.membership-card:nth-child(1) { animation-delay: 0.1s; }
+.membership-card:nth-child(2) { animation-delay: 0.2s; }
+.membership-card:nth-child(3) { animation-delay: 0.3s; }
+.membership-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
