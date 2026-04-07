@@ -20,7 +20,7 @@
 
   <!-- CSS (2 REQUIRED FILES) -->
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/larger.css">
 
   <!-- JS -->
   <script defer src="scripts/join.js"></script>
@@ -28,115 +28,115 @@
 
 <body>
 
-<header>
-  <h1>Join the Chamber</h1>
-</header>
+    <header>
+        <h1>Join the Chamber</h1>
+    </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="join.html">Join</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="join.html">Join</a>
+    </nav>
 
-<main>
+    <main>
 
-<form method="get" action="thankyou.html">
+        <form method="get" action="thankyou.html">
 
-  <label>First Name
-    <input type="text" name="first" required>
-  </label>
+            <label>First Name
+                <input type="text" name="first" required>
+            </label>
 
-  <label>Last Name
-    <input type="text" name="last" required>
-  </label>
+            <label>Last Name
+                <input type="text" name="last" required>
+            </label>
 
-  <label>Organization Title
-    <input type="text" name="orgTitle" pattern="[A-Za-z\\s\\-]{7,}">
-  </label>
+            <label>Organization Title
+                <input type="text" name="orgTitle" pattern="[A-Za-z\\s\\-]{7,}">
+            </label>
 
-  <label>Email
-    <input type="email" name="email" required>
-  </label>
+            <label>Email
+                <input type="email" name="email" required>
+            </label>
 
-  <label>Phone
-    <input type="tel" name="phone" required>
-  </label>
+            <label>Phone
+                <input type="tel" name="phone" required>
+            </label>
 
-  <label>Organization Name
-    <input type="text" name="organization" required>
-  </label>
+            <label>Organization Name
+                <input type="text" name="organization" required>
+            </label>
 
-  <label>Membership Level
-    <select name="membership" required>
-      <option value="np">NP Membership</option>
-      <option value="bronze">Bronze</option>
-      <option value="silver">Silver</option>
-      <option value="gold">Gold</option>
-    </select>
-  </label>
+            <label>Membership Level
+                <select name="membership" required>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
 
-  <label>Description
-    <textarea name="description"></textarea>
-  </label>
+            <label>Description
+                <textarea name="description"></textarea>
+            </label>
 
   <!-- Timestamp -->
-  <input type="hidden" id="timestamp" name="timestamp">
+            <input type="hidden" id="timestamp" name="timestamp">
 
-  <button type="submit">Submit Application</button>
+            <button type="submit">Submit Application</button>
 
-</form>
+        </form>
 
 <!-- MEMBERSHIP CARDS -->
-<section>
-  <h2>Membership Levels</h2>
+        <section>
+            <h2>Membership Levels</h2>
 
-  <div>
-    <h3>NP Membership</h3>
-    <button id="npBtn">More Info</button>
-  </div>
+            <div>
+                <h3>NP Membership</h3>
+                <button id="npBtn">More Info</button>
+            </div>
 
-  <div>
-    <h3>Bronze Membership</h3>
-    <button id="bronzeBtn">More Info</button>
-  </div>
+            <div>
+                <h3>Bronze Membership</h3>
+                <button id="bronzeBtn">More Info</button>
+            </div>
 
-  <div>
-    <h3>Silver Membership</h3>
-    <button id="silverBtn">More Info</button>
-  </div>
+            <div>
+                <h3>Silver Membership</h3>
+                <button id="silverBtn">More Info</button>
+            </div>
 
-  <div>
-    <h3>Gold Membership</h3>
-    <button id="goldBtn">More Info</button>
-  </div>
+            <div>
+                <h3>Gold Membership</h3>
+                <button id="goldBtn">More Info</button>
+            </div>
 
-</section>
+        </section>
 
 <!-- MODALS -->
-<dialog id="npModal">
-  <p>NP Membership: Free for non-profits.</p>
-  <button class="close">Close</button>
-</dialog>
+        <dialog id="npModal">
+            <p>NP Membership: Free for non-profits.</p>
+            <button class="close">Close</button>
+        </dialog>
 
-<dialog id="bronzeModal">
-  <p>Bronze Membership: Basic benefits.</p>
-  <button class="close">Close</button>
-</dialog>
+        <dialog id="bronzeModal">
+            <p>Bronze Membership: Basic benefits.</p>
+            <button class="close">Close</button>
+        </dialog>
 
-<dialog id="silverModal">
-  <p>Silver Membership: Discounts + events.</p>
-  <button class="close">Close</button>
-</dialog>
+        <dialog id="silverModal">
+            <p>Silver Membership: Discounts + events.</p>
+            <button class="close">Close</button>
+        </dialog>
 
-<dialog id="goldModal">
-  <p>Gold Membership: Premium visibility.</p>
-  <button class="close">Close</button>
-</dialog>
+        <dialog id="goldModal">
+            <p>Gold Membership: Premium visibility.</p>
+            <button class="close">Close</button>
+        </dialog>
 
-</main>
+    </main>
 
-<footer>
-  <p>&copy; 2026 Orogbum Chamber of Commerce</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Orogbum Chamber of Commerce</p>
+    </footer>
 
 </body>
 </html>
