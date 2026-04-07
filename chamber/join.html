@@ -53,8 +53,13 @@
                 <input type="text" name="last" autocomplete="family-name" title="Last Name" required>
             </label>
 
-            <label>Organization Title
-                <input type="text" name="orgTitle" autocomplete="organization-title" title="Organization Title">
+            <label>
+                Organization Title
+                <input type="text"
+                       name="orgTitle" 
+                       autocomplete="organization-title" 
+                       title="Organization Title"
+                       pattern="[A-Za-z\\s\\-]{2,60}">
             </label>
 
             <label>Email
@@ -74,12 +79,13 @@
                 required>
             </label>
 
-            <label>Organization Name
+            <label>
+                Organization Name
                 <input type="text"
-                name="organization"
-                autocomplete="organization"
-                title="Organization Name"
-                pattern="[A-Za-z\s\-]{2,50}">
+                       name="organization"
+                       autocomplete="organization"
+                       title="Organization Name"
+                       required>
             </label>
 
             <label>Membership Level
