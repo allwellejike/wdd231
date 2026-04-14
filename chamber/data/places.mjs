@@ -7,43 +7,43 @@ export const places = [
   },
   {
     name: "Central Park",
-    address: "Park Avenue",
+    address: " 203 Park Avenue",
     description: "Beautiful green space for relaxation.",
     image: "images/park.webp"
   },
   {
     name: "Tech Hub",
-    address: "Innovation Street",
+    address: "721 Innovation Street",
     description: "A center for tech startups.",
     image: "images/tech.webp"
   },
   {
     name: "Museum",
-    address: "History Road",
+    address: "998 History Road",
     description: "Explore local history.",
     image: "images/museum.webp"
   },
   {
     name: "Beach",
-    address: "Ocean Drive",
+    address: "665 Ocean Drive",
     description: "Relaxing seaside location.",
     image: "images/beach.webp"
   },
   {
     name: "University",
-    address: "Campus Road",
+    address: "20 Campus Road",
     description: "Top educational institution.",
     image: "images/university.webp"
   },
   {
     name: "Hospital",
-    address: "Health Street",
+    address: "22 Health Street",
     description: "Modern healthcare facility.",
     image: "images/hospital.webp"
   },
   {
     name: "Stadium",
-    address: "Sports Avenue",
+    address: " 32 Sports Avenue",
     description: "Home of major sports events.",
     image: "images/stadium.webp"
   }
