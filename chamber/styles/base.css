@@ -10,7 +10,7 @@ h1, h2, h3 {
 header, footer {
   text-align: center;
   padding: 1rem;
-  background: #222;
+  background-color: #004080; /* same blue */
   color: white;
 }
 
@@ -18,7 +18,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  background: #444;
+  background-color: #003366; /* slightly darker blue */
   padding: 1rem;
 }
 
@@ -27,12 +27,23 @@ nav a {
   text-decoration: none;
 }
 
+nav a.active {
+  color: #66a3ff;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
 #visit-message {
   text-align: center;
   padding: 1rem;
-  background: #eee;
+  background: #e6f0ff; /* light blue instead of gray */
 }
 
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  border-left: 4px solid #004080; /* blue accent */
+}
 /* GRID AREAS (SMALL) */
 .grid-container {
   display: grid;
@@ -49,10 +60,7 @@ nav a {
   padding: 1rem;
 }
 
-.card {
-  background: #f4f4f4;
-  padding: 1rem;
-}
+
 
 .card img {
   width: 100%;
