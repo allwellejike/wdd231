@@ -44,6 +44,10 @@ footer {
   justify-content: center;
 }
 
+img {
+  display: block;
+}
+
 .card {
   background: white;
   border: 1px solid #ccc;
