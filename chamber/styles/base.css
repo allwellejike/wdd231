@@ -33,10 +33,15 @@ nav a.active {
   border-bottom: 2px solid white;
 }
 
+footer {
+  min-height: 60px;
+}
+
 #visit-message {
-  text-align: center;
-  padding: 1rem;
-  background: #e6f0ff; /* light blue instead of gray */
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -58,8 +63,10 @@ nav a.active {
     "card8";
   gap: 1rem;
   padding: 1rem;
-}
 
+  /* ADD THIS */
+  min-height: 100vh;
+}
 
 
 .card img {
