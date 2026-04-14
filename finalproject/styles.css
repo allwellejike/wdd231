@@ -1,0 +1,56 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #0A192F;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #020C1B;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  color: #64FFDA;
+}
+
+/* Layout */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-left: 3px solid #64FFDA;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+/* Wireframe box */
+pre {
+  background-color: #020C1B;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #020C1B;
+  font-size: 14px;
+}
