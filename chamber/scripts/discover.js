@@ -3,14 +3,16 @@ import { places } from "../data/places.mjs";
 const container = document.getElementById("cards");
 
 /* CREATE CARDS */
-places.forEach((place) => {
+places.forEach((place, index) => {
   const card = document.createElement("div");
   card.classList.add("card");
+
+  const loadingAttr = index === 0 ? "" : 'loading="lazy"';
 
   card.innerHTML = `
     <h2>${place.name}</h2>
     <figure>
-      <img src="${place.image}" alt="${place.name}" loading="lazy" width="300" height="200">
+      <img src="${place.image}" alt="${place.name}" width="300" height="200" ${loadingAttr}>
     </figure>
     <address>${place.address}</address>
     <p>${place.description}</p>
