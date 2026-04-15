@@ -1,4 +1,4 @@
-
+/* RESET */
 html, body {
   margin: 0;
   padding: 0;
@@ -8,6 +8,8 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+/* TYPOGRAPHY */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -16,14 +18,15 @@ h1, h2, h3 {
   font-family: "Poppins", sans-serif;
 }
 
-
+/* HEADER + FOOTER */
 header, footer {
   text-align: center;
   padding: 1rem;
-  background-color: #004080; /* same blue */
+  background-color: #004080;
   color: white;
 }
 
+/* NAV (MOBILE FIRST) */
 nav {
   display: none;
   flex-direction: column;
@@ -47,10 +50,20 @@ nav a.active {
   font-weight: bold;
 }
 
-footer {
-  min-height: 60px;
+/* HAMBURGER */
+#hamburger {
+  display: block;
 }
 
+/* VISITOR MESSAGE */
+#visit-message {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* VISUALLY HIDDEN (ACCESSIBILITY) */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,35 +76,22 @@ footer {
   border: 0;
 }
 
-#hamburger {
-  display: block;
-}
-
-#visit-message {
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-img {
-  display: block;
-}
-
+/* CARD BASE */
 .card {
   background: white;
   border: 1px solid #ccc;
-  border-left: 4px solid #004080; /* blue accent */
+  border-left: 4px solid #004080;
 }
 
+/* RESPONSIVE IMAGE (FIXES OVERFLOW) */
 .card img {
-  width: 300px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
 
-/* GRID AREAS (SMALL) */
+/* GRID BASE (MOBILE 320–640) */
 .grid-container {
   display: grid;
   gap: 1rem;
@@ -100,7 +100,6 @@ img {
   margin: 0 auto;
   padding: 1rem;
 
-  /* MOBILE FIRST (required by rubric) */
   grid-template-areas:
     "card1"
     "card2"
@@ -112,7 +111,7 @@ img {
     "card8";
 }
 
-/* CARD AREA MAPPING */
+/* GRID AREA MAPPING (ONLY ONCE = FIXES ERROR) */
 .card:nth-child(1) { grid-area: card1; }
 .card:nth-child(2) { grid-area: card2; }
 .card:nth-child(3) { grid-area: card3; }
