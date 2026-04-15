@@ -4,21 +4,31 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta name="description" content="Learn web development and tech skills fast online">
+  <meta name="description" content="Learn web development and tech skills online">
   <meta name="author" content="Allwell Ejike">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Tech Learning Hub</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tech Learning Hub">
+  <meta property="og:description" content="Learn HTML CSS JavaScript and tech repair skills">
+  <meta property="og:type" content="website">
+
+  <!-- FAVICON (CORRECT PATH) -->
   <link rel="icon" href="images/favicon.ico">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
 <header>
   <h1>Tech Learning Hub</h1>
+
   <button id="menu">☰</button>
 
   <nav id="nav">
@@ -31,26 +41,23 @@
 <main>
 
 <section class="hero">
-  <img src="images/tech1.jpg" alt="Technology workspace" loading="lazy">
-  <h2>Learn Tech Skills Easily</h2>
+  <h2>Welcome to Tech Learning Hub</h2>
+  <p>Learn web development, programming, and tech repair skills</p>
 </section>
 
-<section id="tech-container"></section>
+<section>
+  <h2>Featured Learning Topics</h2>
+  <div id="tech-container"></div>
+</section>
 
 </main>
 
 <footer>
   <p>© 2026 Allwell Ejike</p>
-  <a href="#">Attributions</a>
-  <a href="https://youtube.com" target="_blank">Project Video</a>
 </footer>
 
-<dialog id="modal">
-  <h3>Details</h3>
-  <p id="modal-text"></p>
-  <button id="closeModal">Close</button>
-</dialog>
-
 <script type="module" src="scripts/main.js"></script>
+<script type="module" src="scripts/fetch.js"></script>
+<script type="module" src="scripts/display.js"></script>
 </body>
 </html>

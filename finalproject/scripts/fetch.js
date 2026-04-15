@@ -1,11 +1,16 @@
-import { getData } from "./fetch.js";
-import { initModal } from "./modal.js";
+import { displayData } from "./display.js";
 
-getData();
-initModal();
+export async function getData() {
+  try {
+    const response = await fetch("data/tech.json");
+    const data = await response.json();
 
-/* LOCAL STORAGE */
-if (!localStorage.getItem("visited")) {
-  alert("Welcome to Tech Learning Hub!");
-  localStorage.setItem("visited", "true");
+    displayData(data);
+
+    const beginners = data.filter(item => item.difficulty === "Beginner");
+    console.log(beginners);
+
+  } catch (error) {
+    console.error(error);
+  }
 }

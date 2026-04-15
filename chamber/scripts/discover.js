@@ -7,7 +7,7 @@ places.forEach((place, index) => {
   const card = document.createElement("div");
   card.classList.add("card");
 
-  const loadingAttr = index === 0 ? "" : 'loading="lazy"';
+  const loadingAttr = index > 1 ? 'loading="lazy"' : '';
 
   card.innerHTML = `
     <h2>${place.name}</h2>

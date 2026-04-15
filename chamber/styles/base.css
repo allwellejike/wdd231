@@ -1,3 +1,13 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -53,9 +63,24 @@ img {
   border: 1px solid #ccc;
   border-left: 4px solid #004080; /* blue accent */
 }
+
+.card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
 /* GRID AREAS (SMALL) */
 .grid-container {
   display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  /* MOBILE FIRST (required by rubric) */
   grid-template-areas:
     "card1"
     "card2"
@@ -65,22 +90,9 @@ img {
     "card6"
     "card7"
     "card8";
-  gap: 1rem;
-  padding: 1rem;
-
-  /* ADD THIS */
-  min-height: 100vh;
 }
 
-
-.card img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-}
-
-/* Assign areas */
+/* CARD AREA MAPPING */
 .card:nth-child(1) { grid-area: card1; }
 .card:nth-child(2) { grid-area: card2; }
 .card:nth-child(3) { grid-area: card3; }

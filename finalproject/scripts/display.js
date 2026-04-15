@@ -10,7 +10,7 @@ export function displayData(data) {
       <p>${item.difficulty}</p>
       <p>${item.description}</p>
       <button class="open-modal" data-title="${item.title}">
-        More
+        More Info
       </button>
     `;
 
