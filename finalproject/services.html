@@ -4,21 +4,20 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta name="description" content="Learn web development and tech skills fast online">
+  <meta name="description" content="Tech repair web design and support services">
   <meta name="author" content="Allwell Ejike">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tech Learning Hub</title>
+  <title>Services</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
 
 <header>
-  <h1>Tech Learning Hub</h1>
+  <h1>Services</h1>
   <button id="menu">☰</button>
 
   <nav id="nav">
@@ -30,26 +29,28 @@
 
 <main>
 
-<section class="hero">
-  <img src="images/tech1.jpg" alt="Technology workspace" loading="lazy">
-  <h2>Learn Tech Skills Easily</h2>
-</section>
+<h2>Our Services</h2>
 
-<section id="tech-container"></section>
+<ul>
+  <li>Phone Repair</li>
+  <li>Laptop Repair</li>
+  <li>Web Design</li>
+</ul>
+
+<h3>Contact Form</h3>
+
+<form action="form.html" method="get">
+  <input name="name" placeholder="Name" required>
+  <input name="email" type="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message"></textarea>
+  <button type="submit">Send</button>
+</form>
 
 </main>
 
 <footer>
   <p>© 2026 Allwell Ejike</p>
-  <a href="#">Attributions</a>
-  <a href="https://youtube.com" target="_blank">Project Video</a>
 </footer>
-
-<dialog id="modal">
-  <h3>Details</h3>
-  <p id="modal-text"></p>
-  <button id="closeModal">Close</button>
-</dialog>
 
 <script type="module" src="scripts/main.js"></script>
 </body>

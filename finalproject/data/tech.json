@@ -1,0 +1,17 @@
+[
+  {"title":"HTML","category":"Web","difficulty":"Beginner","description":"Structure web pages"},
+  {"title":"CSS","category":"Web","difficulty":"Beginner","description":"Style websites"},
+  {"title":"JavaScript","category":"JS","difficulty":"Beginner","description":"Programming basics"},
+  {"title":"Flexbox","category":"CSS","difficulty":"Intermediate","description":"Layout system"},
+  {"title":"Grid","category":"CSS","difficulty":"Intermediate","description":"Advanced layouts"},
+  {"title":"DOM","category":"JS","difficulty":"Intermediate","description":"Manipulate pages"},
+  {"title":"Fetch API","category":"JS","difficulty":"Advanced","description":"Get data online"},
+  {"title":"Responsive Design","category":"Web","difficulty":"Beginner","description":"Mobile friendly"},
+  {"title":"SEO","category":"Web","difficulty":"Intermediate","description":"Search ranking"},
+  {"title":"Forms","category":"HTML","difficulty":"Beginner","description":"User input"},
+  {"title":"Events","category":"JS","difficulty":"Beginner","description":"User actions"},
+  {"title":"Storage","category":"JS","difficulty":"Intermediate","description":"Save data locally"},
+  {"title":"Modules","category":"JS","difficulty":"Advanced","description":"Organize code"},
+  {"title":"Debugging","category":"JS","difficulty":"Intermediate","description":"Fix errors"},
+  {"title":"Animations","category":"CSS","difficulty":"Advanced","description":"Motion effects"}
+]
