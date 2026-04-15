@@ -1,3 +1,4 @@
+/* BASE GRID (SMALL: 320–640) */
 .grid-container {
   display: grid;
   gap: 1rem;
@@ -17,8 +18,8 @@
     "card8";
 }
 
-/* TABLET */
-@media (min-width: 600px) {
+/* TABLET: 641–1024 */
+@media (min-width: 641px) {
   .grid-container {
     grid-template-areas:
       "card1 card2"
@@ -28,18 +29,30 @@
   }
 }
 
-/* DESKTOP */
-@media (min-width: 900px) {
+/* DESKTOP: 1025+ */
+@media (min-width: 1025px) {
   .grid-container {
     grid-template-areas:
       "card1 card2 card3"
       "card4 card5 card6"
-      "card7 card8 .";
+      "card7 card8 card8"; /* IMPORTANT change */
   }
-}
-  /* HOVER EFFECT (ONLY LARGE) */
-.card img:hover {
+
+  /* HOVER ONLY ON LARGE */
+  .card img:hover {
     filter: brightness(70%);
     transform: scale(1.05);
     transition: 0.3s;
+  }
+
+  /* NAV FIX FOR DESKTOP */
+  nav {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  #hamburger {
+    display: none;
+  }
 }
