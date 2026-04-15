@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO META -->
   <meta name="author" content="Allwell Ejike">
   <meta name="description" content="Discover key locations, attractions, and opportunities in our chamber community, including parks, businesses, and cultural landmarks.">
+
   <title>Discover - Chamber</title>
 
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    onload="this.rel='stylesheet'">
 
+  <!-- FAVICON -->
   <link rel="icon" href="images/favicon.ico">
 
-  
-  <!-- Open Graph Meta Tags -->
+  <!-- OPEN GRAPH META -->
   <meta property="og:title" content="Discover - Chamber of Commerce">
   <meta property="og:description" content="Explore key locations, attractions, and opportunities in our chamber community including parks, businesses, and cultural landmarks.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://allwellejike.github.io/wdd231/chamber/discover.html">
   <meta property="og:image" content="https://allwellejike.github.io/wdd231/images/chamber.jpg">
 
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
 
-   <link rel="preload" href="styles/base.css" as="style" onload="this.rel='stylesheet'">
-   <link rel="preload" href="styles/medium.css" as="style" onload="this.rel='stylesheet'">
-
+  <!-- SCRIPT -->
   <script type="module" src="scripts/discover.js" defer></script>
 </head>
 
@@ -33,11 +39,12 @@
 
 <header>
   <h1>Discover Our City</h1>
+  <button id="hamburger">☰</button>
 </header>
 
-<nav>
+<nav id="nav">
   <a href="index.html">Home</a>
-  <a href="discover.html">Discover</a>
+  <a href="discover.html" class="active">Discover</a>
 </nav>
 
 <main>
@@ -53,6 +60,16 @@
 <footer>
   <p>&copy; 2026 Chamber Site</p>
 </footer>
+
+<!-- HAMBURGER SCRIPT -->
+<script>
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
+</script>
 
 </body>
 </html>
