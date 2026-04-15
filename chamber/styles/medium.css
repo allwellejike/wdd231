@@ -2,27 +2,27 @@
 @media (min-width: 641px) {
   .grid-container {
     grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
+      "card1 card1"
+      "card2 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
   }
 }
 
 /* DESKTOP: 1025+ */
 @media (min-width: 1025px) {
-
-  /* GRID LAYOUT (STRICT RUBRIC STYLE) */
   .grid-container {
     grid-template-areas:
-      "card1 card2 card3"
-      "card4 card5 card6"
-      "card7 card8 card8";
+      "card1 card1 card2"
+      "card3 card4 card4"
+      "card5 card6 card7"
+      "card8 card8 card8";
   }
 
   /* HOVER ONLY ON LARGE SCREENS */
   .card img {
-    transition: 0.3s;
+    transition: 0.3s ease;
   }
 
   .card img:hover {
@@ -30,7 +30,6 @@
     transform: scale(1.05);
   }
 
-  /* NAV DESKTOP MODE */
   nav {
     display: flex !important;
     flex-direction: row;
