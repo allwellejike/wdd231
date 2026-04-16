@@ -84,3 +84,24 @@ button {
   width: 100%;
   height: auto;
 }
+
+/* MEMBERSHIP CARD ANIMATION */
+.membership-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  will-change: transform, opacity;
+}
+
+/* stagger animation correctly */
+.membership-card:nth-of-type(1) { animation-delay: 0.1s; }
+.membership-card:nth-of-type(2) { animation-delay: 0.2s; }
+.membership-card:nth-of-type(3) { animation-delay: 0.3s; }
+.membership-card:nth-of-type(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
