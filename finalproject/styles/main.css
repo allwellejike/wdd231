@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background: #f5f5f5;
+
+  /* FIX: prevents tiny horizontal scroll on mobile */
+  overflow-x: hidden;
 }
 
 /* ================= HEADER ================= */
@@ -12,6 +15,7 @@ header {
   background: #0d47a1;
   color: white;
   padding: 1rem;
+  flex-wrap: wrap; /* FIX: prevents header overflow on small screens */
 }
 
 /* ================= NAV (DESKTOP) ================= */
@@ -39,7 +43,7 @@ nav a.active {
   font-weight: bold;
 }
 
-/* ================= HAMBURGER (hidden on desktop) ================= */
+/* ================= HAMBURGER ================= */
 #menu {
   display: none;
   font-size: 1.8rem;
@@ -55,7 +59,7 @@ nav a.active {
   padding: 2rem;
 }
 
-/* ================= HERO IMAGE ================= */
+/* FIX: better mobile scaling */
 .hero img {
   width: 100%;
   max-height: 400px;
@@ -105,6 +109,7 @@ dialog {
   border: none;
   border-radius: 10px;
   padding: 1rem;
+  max-width: 90%; /* FIX: prevents modal overflow on mobile */
 }
 
 dialog::backdrop {
@@ -117,4 +122,63 @@ footer {
   padding: 1rem;
   background: #eee;
   margin-top: 2rem;
+}
+
+/* ================= MOBILE FIXES ================= */
+@media (max-width: 768px) {
+
+  /* SHOW HAMBURGER */
+  #menu {
+    display: block;
+  }
+
+  /* MOBILE NAV */
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1rem;
+    background: #0d47a1;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  /* WHEN OPEN */
+  nav.open {
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+  }
+
+  /* FIX: grid becomes cleaner on mobile */
+  #tech-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* FIX: reduce big spacing issues */
+  .hero {
+    padding: 1rem;
+  }
+}
+
+/* EXTRA SMALL SCREENS */
+@media (max-width: 480px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  nav {
+    width: 180px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
