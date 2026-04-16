@@ -10,15 +10,17 @@ if (!localStorage.getItem("visited")) {
   localStorage.setItem("visited", "true");
 }
 
-const menuBtn = document.querySelector("#menu");
-const nav = document.querySelector("#nav");
+// HAMBURGER MENU
+const menuBtn = document.getElementById("menu");
+const nav = document.querySelector("nav");
 
 menuBtn.addEventListener("click", () => {
-  nav.classList.toggle("show");
+  nav.classList.toggle("open");
 });
 
-const links = document.querySelectorAll("#nav a");
-const currentPage = window.location.pathname;
+// ACTIVE NAV LINK
+const links = document.querySelectorAll("nav a");
+const currentPage = window.location.href;
 
 links.forEach(link => {
   if (currentPage.includes(link.getAttribute("href"))) {
