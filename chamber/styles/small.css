@@ -1,28 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
 }
 
 header, footer {
-    background-color: #004080;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+  background-color: #003366; /* darker for contrast fix */
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
-/* Hide nav by default on small screens */
+/* NAV */
 #navMenu {
   display: none;
 }
 
-/* Show nav when .open is added (hamburger clicked) */
 #navMenu.open {
   display: block;
 }
 
-/* Style nav links */
 nav ul {
   list-style: none;
   padding: 0;
@@ -34,19 +31,21 @@ nav li {
 }
 
 nav a {
+  color: white;
   text-decoration: none;
-  color: white; /* matches your header/footer blue theme */
-  font-weight: normal;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 5px;
 }
 
-/* Active link (wayfinding) */
+/* FIXED CONTRAST + WAYFINDING */
 nav a.active {
-  color: #66a3ff; /* lighter blue for highlight */
+  background: #08c8d6;
+  color: #000;
   font-weight: bold;
-  border-bottom: 2px solid white; /* optional underline */
 }
 
-/* Hamburger button styling */
 #menuBtn {
   font-size: 2rem;
   background: none;
@@ -55,142 +54,33 @@ nav a.active {
   cursor: pointer;
 }
 
-/* Desktop: show nav always */
-@media (min-width: 768px) {
-  #menuBtn {
-    display: none; /* hide hamburger on desktop */
-  }
-
-  #navMenu {
-    display: block;
-  }
-
-  #navMenu ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  nav li {
-    margin: 0 1rem;
-  }
-}
-
-button {
-    margin: 0.5rem;
-    padding: 0.6rem 1.2rem;
-    background: #004080;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; /* keep text white for readability */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* add subtle shadow for contrast */
-}
-
-.hero-text .cta {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 0.7rem 1.5rem;
-    background: #004080; /* same blue as header/footer */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background 0.3s ease;
-}
-
-.hero-text .cta:hover {
-    background: #002f5b; /* darker blue on hover */
-}
-
+/* MAIN */
 main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 1rem;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+/* CARDS */
+.card, .membership-card {
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
 }
 
-.card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    background: white;
-    transition: transform 0.2s ease;
+/* BUTTONS */
+button {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.card p {
-    margin: 0.3rem 0;
-}
-
-/* List view */
-.list {
-    display: block;
-}
-
-.list .card {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    text-align: left;
-}
-
-.list .card img {
-    display: none; /* hide images in list view */
-}
-
-.membership-card {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.membership-card:nth-child(1) { animation-delay: 0.1s; }
-.membership-card:nth-child(2) { animation-delay: 0.2s; }
-.membership-card:nth-child(3) { animation-delay: 0.3s; }
-.membership-card:nth-child(4) { animation-delay: 0.4s; }
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* HERO */
+.hero img {
+  width: 100%;
+  height: auto;
 }

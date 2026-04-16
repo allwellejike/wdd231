@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,155 +13,134 @@
   <meta property="og:image" content="https://allwellejike.github.io/wdd231/images/chamber.jpg">
   <meta property="og:url" content="https://allwellejike.github.io/wdd231/chamber/join.html">
 
+  <title>Join the Orogbum Chamber of Commerce</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <title>Join the Orogbum Chamber of Commerce</title>
-
-  <!-- FAVICON -->
   <link rel="icon" href="images/favicon.ico">
 
-  <!-- CSS (2 REQUIRED FILES) -->
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/larger.css">
   <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- JS -->
   <script defer src="scripts/join.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Join the Chamber</h1>
-    </header>
+<header>
+  <h1>Orogbum Chamber of Commerce</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="join.html">Join</a>
-    </nav>
+  <button id="menuBtn">☰</button>
 
-    <main>
+  <nav id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <form method="get" action="thankyou.html">
+<main>
 
-            <label>First Name
-                <input type="text" name="first" autocomplete="given-name" title="First Name" required>
-            </label>
+  <form method="get" action="thankyou.html">
 
-            <label>Last Name
-                <input type="text" name="last" autocomplete="family-name" title="Last Name" required>
-            </label>
+    <label for="first">First Name
+      <input id="first" type="text" name="first" autocomplete="given-name" required>
+    </label>
 
-            <label>
-                Organization Title
-                <input type="text"
-                name="orgTitle" 
-                autocomplete="organization-title" 
-                title="Organization Title"
-                pattern="[A-Za-z\s\-]{7,60}"
-                required>
-            </label>
+    <label for="last">Last Name
+      <input id="last" type="text" name="last" autocomplete="family-name" required>
+    </label>
 
-            <label>Email
-                <input type="email"
-                name="email"
-                autocomplete="email"
-                title="Email Address"
-                placeholder="name@example.com"
-                required>
-            </label>
+    <label for="orgTitle">Organization Title
+      <input id="orgTitle" type="text" name="orgTitle"
+        autocomplete="organization-title"
+        pattern="[A-Za-z0-9\s\-]{7,60}" required>
+    </label>
 
-            <label>Phone
-                <input type="tel"
-                name="phone"
-                autocomplete="tel"
-                title="Mobile Phone"
-                required>
-            </label>
+    <label for="email">Email
+      <input id="email" type="email" name="email" placeholder="name@example.com" required>
+    </label>
 
-            <label>
-                Organization Name
-                <input type="text"
-                name="organization"
-                autocomplete="organization"
-                title="Organization Name"
-                required>
-            </label>
+    <label for="phone">Phone
+      <input id="phone" type="tel" name="phone" autocomplete="tel" required>
+    </label>
 
-            <label>Membership Level
-                <select name="membership" required>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
-                </select>
-            </label>
+    <label for="organization">Organization Name
+      <input id="organization" type="text" name="organization" required>
+    </label>
 
-            <label>Organization Description
-                <textarea name="description" title="Organization Description"></textarea>
-            </label>
+    <label for="membership">Membership Level
+      <select id="membership" name="membership" required>
+        <option value="np">NP Membership</option>
+        <option value="bronze">Bronze</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+      </select>
+    </label>
 
-  <!-- Timestamp -->
-            <input type="hidden" id="timestamp" name="timestamp">
+    <label for="description">Organization Description
+      <textarea id="description" name="description"></textarea>
+    </label>
 
-            <button type="submit">Submit Application</button>
+    <input type="hidden" id="timestamp" name="timestamp">
 
-        </form>
+    <button type="submit">Submit Application</button>
+  </form>
 
-<!-- MEMBERSHIP CARDS -->
-        <section>
-            <h2>Membership Levels</h2>
+  <section>
+    <h2>Membership Levels</h2>
 
-            <div class="membership-card">
-                <h3>NP Membership</h3>
-                <button id="npBtn">More Info</button>
-            </div>
+    <div class="membership-card">
+      <h3>NP Membership</h3>
+      <button id="npBtn">More Info</button>
+    </div>
 
-            <div class="membership-card">
-                <h3>Bronze Membership</h3>
-                <button id="bronzeBtn">More Info</button>
-            </div>
+    <div class="membership-card">
+      <h3>Bronze Membership</h3>
+      <button id="bronzeBtn">More Info</button>
+    </div>
 
-            <div class="membership-card">
-                <h3>Silver Membership</h3>
-                <button id="silverBtn">More Info</button>
-            </div>
+    <div class="membership-card">
+      <h3>Silver Membership</h3>
+      <button id="silverBtn">More Info</button>
+    </div>
 
-            <div class="membership-card">
-                <h3>Gold Membership</h3>
-                <button id="goldBtn">More Info</button>
-            </div>
+    <div class="membership-card">
+      <h3>Gold Membership</h3>
+      <button id="goldBtn">More Info</button>
+    </div>
+  </section>
 
-        </section>
+  <!-- MODALS -->
+  <dialog id="npModal">
+    <p>NP Membership: Free for non-profits.</p>
+    <button class="close">Close</button>
+  </dialog>
 
-<!-- MODALS -->
-        <dialog id="npModal">
-            <p>NP Membership: Free for non-profits.</p>
-            <button class="close">Close</button>
-        </dialog>
+  <dialog id="bronzeModal">
+    <p>Bronze Membership: Basic benefits.</p>
+    <button class="close">Close</button>
+  </dialog>
 
-        <dialog id="bronzeModal">
-            <p>Bronze Membership: Basic benefits.</p>
-            <button class="close">Close</button>
-        </dialog>
+  <dialog id="silverModal">
+    <p>Silver Membership: Discounts + events.</p>
+    <button class="close">Close</button>
+  </dialog>
 
-        <dialog id="silverModal">
-            <p>Silver Membership: Discounts + events.</p>
-            <button class="close">Close</button>
-        </dialog>
+  <dialog id="goldModal">
+    <p>Gold Membership: Premium visibility.</p>
+    <button class="close">Close</button>
+  </dialog>
 
-        <dialog id="goldModal">
-            <p>Gold Membership: Premium visibility.</p>
-            <button class="close">Close</button>
-        </dialog>
+</main>
 
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Orogbum Chamber of Commerce</p>
-    </footer>
+<footer>
+  <p>&copy; 2026 Orogbum Chamber of Commerce</p>
+</footer>
 
 </body>
 </html>

@@ -1,25 +1,30 @@
-// Add timestamp
-document.addEventListener("DOMContentLoaded", () => {
-  const timestamp = document.getElementById("timestamp");
-  if (timestamp) {
-    timestamp.value = new Date().toISOString();
-  }
+// timestamp
+document.getElementById("timestamp").value = new Date().toISOString();
 
-  // MODALS
-  const npModal = document.getElementById("npModal");
-  const bronzeModal = document.getElementById("bronzeModal");
-  const silverModal = document.getElementById("silverModal");
-  const goldModal = document.getElementById("goldModal");
+// menu toggle
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
 
-  document.getElementById("npBtn").addEventListener("click", () => npModal.showModal());
-  document.getElementById("bronzeBtn").addEventListener("click", () => bronzeModal.showModal());
-  document.getElementById("silverBtn").addEventListener("click", () => silverModal.showModal());
-  document.getElementById("goldBtn").addEventListener("click", () => goldModal.showModal());
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+});
 
-  // Close buttons
-  document.querySelectorAll(".close").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll("dialog").forEach(d => d.close());
-    });
+// MODALS
+const modals = {
+  npBtn: "npModal",
+  bronzeBtn: "bronzeModal",
+  silverBtn: "silverModal",
+  goldBtn: "goldModal",
+};
+
+Object.keys(modals).forEach(btn => {
+  document.getElementById(btn).addEventListener("click", () => {
+    document.getElementById(modals[btn]).showModal();
+  });
+});
+
+document.querySelectorAll(".close").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.closest("dialog").close();
   });
 });
