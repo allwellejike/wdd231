@@ -1,7 +1,6 @@
 import { getData } from "./fetch.js";
 import { initModal } from "./modal.js";
 
-getData();
 initModal();
 
 // LOCAL STORAGE
@@ -26,4 +25,25 @@ links.forEach(link => {
   if (currentPage.includes(link.getAttribute("href"))) {
     link.classList.add("active");
   }
+});
+
+// =======================
+// 🟢 RENDER YOUR 15 CARDS
+// =======================
+const container = document.getElementById("tech-container");
+
+getData().then(data => {
+  data.forEach(item => {
+    const card = document.createElement("div");
+
+    card.innerHTML = `
+      <img src="${item.image}" alt="">
+      <h3>${item.title}</h3>
+      <p>${item.description}</p>
+      <p><strong>Level:</strong> ${item.level}</p>
+      <p><strong>Time:</strong> ${item.time}</p>
+    `;
+
+    container.appendChild(card);
+  });
 });
