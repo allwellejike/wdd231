@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+
+  /* SHOW HAMBURGER */
+  #menu {
+    display: block;
+  }
+
+  /* MOBILE NAV */
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1rem;
+    background: #0d47a1;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  /* WHEN OPEN */
+  nav.open {
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+  }
+}

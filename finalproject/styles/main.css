@@ -33,13 +33,13 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* WAYFINDING */
+/* ACTIVE LINK */
 nav a.active {
   border-bottom: 3px solid rgb(8, 195, 228);
   font-weight: bold;
 }
 
-/* ================= HAMBURGER BUTTON ================= */
+/* ================= HAMBURGER (hidden on desktop) ================= */
 #menu {
   display: none;
   font-size: 1.8rem;
@@ -55,7 +55,7 @@ nav a.active {
   padding: 2rem;
 }
 
-/* ================= GRID CONTAINER ================= */
+/* ================= GRID ================= */
 #tech-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -68,14 +68,13 @@ nav a.active {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
 
 #tech-container div:hover {
   transform: translateY(-5px);
 }
 
-/* IMAGES */
 #tech-container img {
   width: 100%;
   height: 150px;
@@ -110,33 +109,4 @@ footer {
   padding: 1rem;
   background: #eee;
   margin-top: 2rem;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-
-  #menu {
-    display: block;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    right: 10px;
-    top: 60px;
-    background: #0d47a1;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 200px;
-    z-index: 1000;
-  }
-
-  nav.open {
-    display: flex;
-  }
-
-  nav a {
-    padding: 0.5rem 0;
-  }
 }
