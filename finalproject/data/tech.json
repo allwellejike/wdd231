@@ -1,17 +1,122 @@
 [
-  {"title":"HTML Basics","category":"Web","difficulty":"Beginner","description":"Structure web pages"},
-  {"title":"CSS Styling","category":"Web","difficulty":"Beginner","description":"Design websites"},
-  {"title":"JavaScript","category":"JS","difficulty":"Beginner","description":"Programming basics"},
-  {"title":"Flexbox","category":"CSS","difficulty":"Intermediate","description":"Layout system"},
-  {"title":"Grid","category":"CSS","difficulty":"Intermediate","description":"Advanced layout"},
-  {"title":"DOM","category":"JS","difficulty":"Intermediate","description":"Manipulate pages"},
-  {"title":"Fetch API","category":"JS","difficulty":"Advanced","description":"Get data from server"},
-  {"title":"Responsive Design","category":"Web","difficulty":"Beginner","description":"Mobile friendly sites"},
-  {"title":"SEO","category":"Web","difficulty":"Intermediate","description":"Search optimization"},
-  {"title":"Forms","category":"HTML","difficulty":"Beginner","description":"User input handling"},
-  {"title":"Events","category":"JS","difficulty":"Beginner","description":"User interaction"},
-  {"title":"Storage","category":"JS","difficulty":"Intermediate","description":"Save data locally"},
-  {"title":"Modules","category":"JS","difficulty":"Advanced","description":"Organized code structure"},
-  {"title":"Debugging","category":"JS","difficulty":"Intermediate","description":"Fix errors"},
-  {"title":"Animations","category":"CSS","difficulty":"Advanced","description":"Motion effects"}
+  {
+    "title": "HTML Basics",
+    "category": "Web Development",
+    "level": "Beginner",
+    "description": "Learn how to structure web pages using HTML.",
+    "time": "2 hours",
+    "image": "images/html.jpg"
+  },
+  {
+    "title": "CSS Styling",
+    "category": "Web Development",
+    "level": "Beginner",
+    "description": "Style websites using colors and layouts.",
+    "time": "3 hours",
+    "image": "images/css.jpg"
+  },
+  {
+    "title": "JavaScript Fundamentals",
+    "category": "Programming",
+    "level": "Beginner",
+    "description": "Learn the basics of JavaScript programming.",
+    "time": "5 hours",
+    "image": "images/javascript.jpg"
+  },
+  {
+    "title": "Responsive Web Design",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "description": "Make websites mobile-friendly and responsive.",
+    "time": "3 hours",
+    "image": "images/responsive.jpg"
+  },
+  {
+    "title": "Fetch API",
+    "category": "Programming",
+    "level": "Advanced",
+    "description": "Retrieve data from APIs using JavaScript.",
+    "time": "3 hours",
+    "image": "images/fetch.jpg"
+  },
+  {
+    "title": "Latest Tech Trends 2026",
+    "category": "Tech Trends",
+    "level": "Beginner",
+    "description": "Explore current trends in technology and innovation.",
+    "time": "2 hours",
+    "image": "images/trends.jpg"
+  },
+  {
+    "title": "Artificial Intelligence Basics",
+    "category": "Tech Trends",
+    "level": "Intermediate",
+    "description": "Understand how AI is shaping the future.",
+    "time": "4 hours",
+    "image": "images/ai.jpg"
+  },
+  {
+    "title": "Cloud Computing",
+    "category": "Tech Trends",
+    "level": "Intermediate",
+    "description": "Learn how cloud services power modern apps.",
+    "time": "3 hours",
+    "image": "images/cloud.jpg"
+  },
+  {
+    "title": "Phone Troubleshooting",
+    "category": "Device Repair",
+    "level": "Beginner",
+    "description": "Fix common smartphone issues easily.",
+    "time": "1 hour",
+    "image": "images/phone-repair.jpg"
+  },
+  {
+    "title": "Laptop Repair Basics",
+    "category": "Device Repair",
+    "level": "Intermediate",
+    "description": "Diagnose and fix common laptop problems.",
+    "time": "2 hours",
+    "image": "images/laptop-repair.jpg"
+  },
+  {
+    "title": "Software Installation Guide",
+    "category": "Device Repair",
+    "level": "Beginner",
+    "description": "Install and update software correctly.",
+    "time": "1 hour",
+    "image": "images/software.jpg"
+  },
+  {
+    "title": "Virus Removal",
+    "category": "Device Repair",
+    "level": "Intermediate",
+    "description": "Remove malware and secure your device.",
+    "time": "2 hours",
+    "image": "images/security.jpg"
+  },
+  {
+    "title": "Website SEO Basics",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "description": "Optimize websites for search engines.",
+    "time": "2 hours",
+    "image": "images/seo.jpg"
+  },
+  {
+    "title": "JavaScript Events",
+    "category": "Programming",
+    "level": "Beginner",
+    "description": "Handle user interactions with events.",
+    "time": "2 hours",
+    "image": "images/events.jpg"
+  },
+  {
+    "title": "CSS Animations",
+    "category": "Web Development",
+    "level": "Advanced",
+    "description": "Add animations and transitions to websites.",
+    "time": "3 hours",
+    "image": "images/animations.jpg"
+  }
 ]

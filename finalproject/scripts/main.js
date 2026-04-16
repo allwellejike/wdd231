@@ -1,12 +1,27 @@
 import { getData } from "./fetch.js";
 import { initModal } from "./modal.js";
-import { checkVisit } from "./storage.js";
 
 getData();
 initModal();
 
-/* LOCAL STORAGE */
-if (!checkVisit()) {
+// LOCAL STORAGE
+if (!localStorage.getItem("visited")) {
   alert("Welcome to Tech Learning Hub!");
   localStorage.setItem("visited", "true");
 }
+
+const menuBtn = document.querySelector("#menu");
+const nav = document.querySelector("#nav");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
+
+const links = document.querySelectorAll("#nav a");
+const currentPage = window.location.pathname;
+
+links.forEach(link => {
+  if (currentPage.includes(link.getAttribute("href"))) {
+    link.classList.add("active");
+  }
+});
