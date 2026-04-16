@@ -3,26 +3,86 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Form Result</title>
-  <link rel="icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script type="module" src="scripts/main.js"></script>
+  <meta name="author" content="Allwell Ejike">
+  <meta name="description" content="Form submission result page showing user input confirmation.">
+
+  <title>Form Result</title>
+
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/main.css">
 
+  <script type="module" src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
-<h2>Submission Result</h2>
+<header>
+  <h1>Tech Learning Hub</h1>
+
+  <!-- HAMBURGER -->
+  <button id="menu" aria-label="Toggle Navigation">☰</button>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="learning.html">Learning</a>
+    <a href="services.html">Services</a>
+    <a href="form.html">Form</a>
+  </nav>
+</header>
+
+<main>
+
+  <h2>Submission Result</h2>
+
+  <section id="result">
+    <h2 id="thankyou"></h2>
+    <p>Email: <span id="email"></span></p>
+    <p>Message: <span id="message"></span></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Tech Learning Hub</p>
+</footer>
 
 <script>
-const params = new URLSearchParams(window.location.search);
+document.addEventListener("DOMContentLoaded", () => {
 
-document.body.innerHTML = `
-  <h2>Thank you ${params.get("name")}</h2>
-  <p>Email: ${params.get("email")}</p>
-  <p>Message: ${params.get("message")}</p>
-`;
+  const params = new URLSearchParams(window.location.search);
+
+  // FORM DATA
+  document.getElementById("thankyou").textContent =
+    `Thank you ${params.get("name") || ""}`;
+
+  document.getElementById("email").textContent =
+    params.get("email") || "";
+
+  document.getElementById("message").textContent =
+    params.get("message") || "";
+
+  // ACTIVE NAV
+  const links = document.querySelectorAll("nav a");
+  const currentPage = window.location.href;
+
+  links.forEach(link => {
+    if (currentPage.includes(link.getAttribute("href"))) {
+      link.classList.add("active");
+    }
+  });
+
+  // HAMBURGER
+  const menuBtn = document.getElementById("menu");
+  const nav = document.querySelector("nav");
+
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+
+});
 </script>
 
 </body>
